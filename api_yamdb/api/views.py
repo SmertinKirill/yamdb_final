@@ -1,3 +1,4 @@
+from api.permissions import IsAdminOrModeratorOrAuthorOrReadOnly
 from django.conf import settings
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
@@ -7,10 +8,9 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, permissions, status, viewsets
 from rest_framework.decorators import action, api_view, permission_classes
 from rest_framework.response import Response
-
-from api.permissions import IsAdminOrModeratorOrAuthorOrReadOnly
 from reviews.models import Category, Genre, Review, Title
 from users.models import User
+
 from .filters import TitleFilter
 from .permissions import IsAdminOrReadOnly
 from .serializers import (CategorySerializer, CommentSerializer,

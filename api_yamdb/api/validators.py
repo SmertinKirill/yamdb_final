@@ -1,7 +1,6 @@
 import re
 
 from rest_framework.exceptions import ValidationError
-
 from users.models import User
 
 username_pattern = re.compile(r'^[\w.@+-]+\Z')
