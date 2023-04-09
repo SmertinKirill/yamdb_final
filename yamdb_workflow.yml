@@ -72,7 +72,9 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
           sudo docker-compose stop
-          sudo docker-compose rm web
+          sudo docker-compose down -v
+          sudo docker image rm deflorian99/api_yamdb_final:v1
+          sudo rm .env
           touch .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env
