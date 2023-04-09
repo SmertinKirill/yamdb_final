@@ -147,7 +147,7 @@ dmypy.json
 
 # папки со статикой и медиа  
 # static/*
-# static/data/
+static/data/
 # !static data/redoc.yaml
 posts/static/
 media/
