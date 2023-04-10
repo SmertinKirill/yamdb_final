@@ -136,3 +136,8 @@ response status code 201
 
 #### Возможные коды ошибок: 
 400 Отсутствует обязательное поле или оно некорректно
+
+## Разработчики
+- [SmertinKirill](https://github.com/SmertinKirill)
+- [Turianpy](https://github.com/Turianpy)
+- [AndrewNemz](https://github.com/AndrewNemz)
